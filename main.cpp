@@ -102,6 +102,7 @@ void readContour()
 }
 void readContourPointImage()
 {
+	float temp1,temp2,temp3,temp4;
 	vector<VECLINES> ConPoint;
 	vector<LINE> ConPointImage;
 	int pointNum,flag=0;
@@ -120,6 +121,48 @@ void readContourPointImage()
 			pointNum=stringToNum<int>(conpointimgstr);
 			for(int m=0;m<pointNum;m++)
 			{
+
+
+				//将第一个 x y 读入temp1,temp2
+
+
+				//将第二个 x y 读入temp3,temp4
+
+
+				//将temp1--temp4  存入第一个 LINE
+
+				//push  LINE
+
+
+				//将temp3和temp4的值分别给temp1和temp2
+
+
+				//将第3个 x y 读入temp3,temp4
+
+
+				//将temp1--temp4  存入第二个 LINE
+
+				//push  LINE
+
+				//将temp3和temp4的值分别给temp1和temp2
+
+
+				//将第4个 x y 读入temp3,temp4
+
+
+				//将temp1--temp4  存入第三个 LINE
+
+				//push  LINE
+				
+				// 。。。。。
+
+				// 直到结束
+
+				//!!!!没有处理首尾相接的线段
+
+
+
+
 				for(int n=0;n<2;n++)
 				{
 					conpointimg_in>>conpointimgstr;
